@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n=prompt("Enter No of Student :");
+        var stu=[];
+        for(var i=1;i<n;i++)
+        {
+            stu[i]=Number(prompt("Enter Marks of Student : "+(i+1)+" OutOf 500"));
+        }
+        document.write('<h1 style="text-align:center; color:skyblue;">'+"Result"+'</h1>');
+        for(var i=1;i<n;i++)
+        {
+            if(stu[i]>175)
+            document.write('<h1 style="text-align:center; color:red;">'+"Student :"+i+" : "+stu[i]+'</h1>');
+        }
+    </script>
+</body>
+</html>
